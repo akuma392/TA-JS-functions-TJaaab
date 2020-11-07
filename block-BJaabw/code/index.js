@@ -28,19 +28,11 @@ isInRange(1, 10, 19); // false
 
 // - Write a Function Decleration for above problem
 function isInRange(a,z,n) {
-  for(let i = a; i<=z;i++)
-  {
-    if (n == i){
-      return true;
-    }
-    else{
-      return false;
-    }
-  }
+  return n > z && n<a;
 }
 // - Execute the function with required parameter
 
-/* 2. calculateBMI
+/* 2. calculateBMIn 
 
 
 Take two arguments weight and height and return `Underweight`, `Normal` etc based on data.
@@ -128,8 +120,11 @@ function sum(x,y) {
   if(typeof(x) == "string" && typeof(y) == "string"){
     return `${x} ${y}`;
   }
-  else{
+  else if(typeof(x) == "number" && typeof(y) == "number"){
     return x+y;
+  }
+  else{
+    return "Enter valid values";
   }
   
 }

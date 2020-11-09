@@ -256,11 +256,14 @@ const oddEven = function oddOrEven(number){
 // - Write an named Function Expression
 
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
+let oddOrEven = (num) => num % 2 == 0 ? "NUmber is even" : "Number is Odd";
 
 // - Write an Arrow Function with curly brackets
-
+let oddOrEven = (num) => { num % 2 == 0 ? "NUmber is even" : "Number is Odd" };
 // - Execute the function
-
+oddOrEven(25);
 // - Execute the function and store the return value in a variable
-
+Let oddNum = oddOrEven();
 // - What is the typeof returnValue
+
+typeof(oddOrEven()); //"Number"

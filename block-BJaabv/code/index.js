@@ -24,7 +24,7 @@ function calculateDogAge(puuppyAge) {
 
 function calculateMoviesToWatch(age,numberOfMovies) {
   const maxAge = 70;
-   let totalMovies = maxAge * 12 * 4;
+   let totalMovies = (maxAge - age) * 12 * 4;
   return `total number of movies will watch ${totalMovies}`;
 }
 

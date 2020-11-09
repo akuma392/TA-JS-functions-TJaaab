@@ -84,13 +84,19 @@ on if the year id leap year or not.
 isLeapYear(2000); // true
 isLeapYear(2001); // false
 */
-function isLeapYear(year){
-  
-  if(year % 4 == 0 ){
-    return `${year} is a leap year`;
+function isLeapYear(){
+  let year = +prompt("enter a year");
+  if(year % 400 == 0 ){
+   return true;
+  }
+  else if(year % 100 == 0 ){
+    return false;
+  }
+   else if(year % 4 == 0 ){
+   return true;
   }
   else{
-   return `${year} is not a leap year`;
+   return false;
   }
 }
 isLeapYear();
